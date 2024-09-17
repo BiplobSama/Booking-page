@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <!-- Link your external CSS file here -->
+    <link rel="stylesheet" href="bookingpage.css">
+</head>
+<body>
+  <section class="booking-page">
+    <header class="top-bar">
+      <div class="logo" aria-hidden="true"></div>
+      <h1 class="page-title">Book Your Service</h1>
+      <nav class="navigation">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">Services</a>
+        <a href="#" class="nav-item">About Us</a>
+      </nav>
+    </header>
+
+    <main class="booking-form">
+      <div class="form-container">
+        <h2 class="form-title">Booking Form</h2>
+        <p class="form-description">Select your preferred date and time</p>
+      </div>
+      <form class="form-fields" action="/submit-booking" method="POST">
+        <div class="form-row">
+          <div class="input-group">
+            <label for="date" class="input-label">Date</label>
+            <input type="date" id="date" class="input-field" placeholder="Select Date" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-group">
+            <label for="time" class="input-label">Time</label>
+            <input type="time" id="time" class="input-field" placeholder="Select Time" required>
+          </div>
+        </div>
+        <button type="submit" class="book-button primary-button">Book Now</button>
+      </form>
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a85d71505178d013dbab856a85a763190323adaf389419bc53bf40738c45540?placeholderIfAbsent=true&apiKey=5df47b68c37b4e79819fb3179895f767" alt="Background image" class="background-image" />
+    </main>
+
+    <section class="payment-section">
+      <div class="payment-container">
+        <h2 class="payment-title">Payment Information</h2>
+        <form class="payment-input" action="/submit-payment" method="POST">
+          <label for="payment-details" class="visually-hidden">Fill in your payment details</label>
+          <input type="text" id="payment-details" class="payment-field" placeholder="Enter your payment details" required>
+        </form>
+        <button type="submit" class="confirm-button primary-button">Confirm Payment</button>
+      </div>
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a85d71505178d013dbab856a85a763190323adaf389419bc53bf40738c45540?placeholderIfAbsent=true&apiKey=5df47b68c37b4e79819fb3179895f767" alt="Payment section background image" class="background-image" />
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="contact-info">Contact Us: contact@booking.com</p>
+        <p class="social-info">Follow Us: @booking</p>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>
